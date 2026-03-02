@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');;
+
+body {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* --- SEÇÃO HERO (PC) --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 80vh;
+}
+
+.hero-content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #000;
+    color: #1aae52;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1aae52;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 50%;
+}
+
+p {
+    font-size: large;
+    color: #1aae52;
+}
+
+.brand-name {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: #1aae52;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    word-spacing: 5px;
+}
+
+.description {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 90;
+    color: #1aae52;
+    line-height: 1.5;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: #000;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* --- SAIBA MAIS (PC) --- */
+.saiba-mais {
+    background-image: url('../img/fundo-teclado-clean.jpg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+
+.saiba-mais h2 {
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.saiba-mais p {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.overlay-conteudo {
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* --- SERVIÇOS (PC - VOLTANDO AO NORMAL) --- */
+.nossos-servicos {
+    background-color: #1a2b16;
+    padding: 80px 10%;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-sessao {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.servicos-grid {
+    display: flex; /* Flexbox para ficar lado a lado no PC */
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.coluna {
+    flex: 1; /* Divide as 3 colunas iguais no PC */
+}
+
+.coluna h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.coluna ul li {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    padding-left: 15px;
+    position: relative;
+}
+
+/* --- CELULAR (TUDO ORGANIZADO AQUI DENTRO) --- */
+@media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden; /* Mata o scroll lateral */
+    }
+
+    .hero {
+        flex-direction: column-reverse; /* Logo em cima, texto embaixo */
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 250px !important;
+        margin-bottom: 20px;
+    }
+
+    .saiba-mais {
+        flex-direction: column;
+        padding: 60px 5%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .overlay-conteudo {
+        padding: 0;
+    }
+
+    .servicos-grid {
+        flex-direction: column; /* Um embaixo do outro no celular */
+        gap: 40px;
+    }
+
+    .coluna {
+        width: 100%;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .saiba-mais h2, .titulo-sessao, .frase-impacto h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* --- RODAPÉ (PC E CELULAR) --- */
+.rodape-container {
+    background-color: #000000;
+    padding: 80px 10% 40px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    display: block;
+    clear: both;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s ease-out;
+}
+
+.rodape-container.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.frase-impacto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.frase-impacto h2 span {
+    color: #2ecc71;
+}
+
+.frase-impacto p {
+    font-size: 1.3rem;
+    color: #aaaaaa;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    font-weight: 400;
+}
+
+.contatos-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.item-contato {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.item-contato i {
+    font-size: 2.5rem;
+    color: #2ecc71;
+}
+
+.item-contato:hover {
+    color: #2ecc71;
+    transform: translateY(-10px);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #444444;
+    border-top: 1px solid #222222;
+    padding-top: 30px;
+}
+
+.bloco-localizacao {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.localizacao {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.localizacao:hover {
+    color: #2ecc71 !important;      /* Brilha verde no mouse */
+    opacity: 1;
+    transform: scale(1.05) translateY(-5px);
+}
