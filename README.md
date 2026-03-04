@@ -20,7 +20,7 @@ Este projeto foi desenvolvido utilizando tecnologias "puro sangue" (Vanilla), de
 ## 📂 Como visualizar o projeto
 
 Você pode visualizar o projeto online através do link abaixo:
-[🔗 Clique aqui para ver o site ao vivo](SUA_URL_DO_GITHUB_PAGES_AQUI)
+[🔗 Clique aqui para ver o site ao vivo](https://github.com/fernandavaleriano/Tecn-logo-Suporte)
 
 ---
 *Este é um projeto de portfólio conceitual.*
