@@ -25,7 +25,7 @@ focada em clareza de informação, conversão via WhatsApp e atendimento remoto.
 
 <div align="center"> <img src="prints/celular (3).jpg" alt="Suporte Tecnológico Logo" width="200"/>
 
-| :--- | :--- |
+
 **[🌐 Ver site ao vivo](https://suporte-tecnologico-web.vercel.app/)**
 
 
