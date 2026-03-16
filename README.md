@@ -25,6 +25,9 @@ focada em clareza de informação, conversão via WhatsApp e atendimento remoto.
 
 <div align="center"> <img src="prints/celular (3).jpg" alt="Suporte Tecnológico Logo" width="200"/>
 
+| :--- | :--- |
+**[🌐 Ver site ao vivo](https://suporte-tecnologico-web.vercel.app/)**
+
 
 ## 🛠️ Quick Stack
 
@@ -32,7 +35,7 @@ focada em clareza de informação, conversão via WhatsApp e atendimento remoto.
 | :--- | :--- |
 | **Frontend** | HTML5 Semântico, CSS3 (Flexbox, Animations, Responsive Design) |
 | **Interatividade** | JavaScript (Animação de rodapé via **Intersection Observer**) |
-| **Deploy/CI-CD** | GitHub & Netlify (Deploy automático via branch `main`) |
+| **Deploy/CI-CD** | GitHub & Vercel (Deploy automático via branch `main`) |
 
 ---
 
